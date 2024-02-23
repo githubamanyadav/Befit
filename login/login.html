@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding:0 ;
+            box-sizing: border-box;
+        }
+
+        html
+        {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        ::-webkit-scrollbar
+        {
+            width: 15px;
+        }
+        
+        ::-webkit-scrollbar-track
+        {
+            background-color: #0056C6;
+            height: 40px;
+        }
+
+        ::-webkit-scrollbar-thumb
+        {
+            background-color: #3d67c3;
+            border-radius: 20px;
+        }
+
+
+        .login
+        {    height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            position: relative;
+
+
+            & h4
+            {
+                margin-top: 600px;
+            }
+
+           & .image
+           {
+            width: 100%;
+            height: 100vh;
+
+            &::after
+            {
+                content: "BeFit.";
+                position: absolute;
+                top: 25px;
+                left: 40px;
+                font-size: 50px;
+                color: white;
+                font-weight: 500;
+
+            }
+           }
+
+            & img
+        {
+            width:100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        & .form
+        {   
+            height: auto;
+            width: 50%;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          
+            & form
+            {
+
+                & h1
+                {
+                    color: #508EAF;
+                }
+                height: 90vh;
+                width: 515px;
+                /* background-color: rgb(142, 142, 142) ; */
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 70px;
+
+                
+                      
+                & input
+                {
+                    height: 50px;
+                    width: 424px;
+                    font-size: 20px;
+                    border: 4px solid #508EAF;
+                    color: #0056C6;
+                    /* border: 2px solid rgb(202, 8, 8); */
+                    background-color: rgb(255, 255, 255);
+                             text-align: center;
+                }
+
+                & button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 221px; 
+    height: 100px;
+    border: none;
+    font-size: 30px;
+    font-weight: 400px;
+    border-radius: 8px;
+    background-color: #9c4e75;
+    font-weight: 500;
+    color: white;
+
+    
+    a
+    {
+        text-decoration: none;
+        color: white;
+    }
+}
+                & button:hover
+                {
+                    background-color: black;
+                }
+            }
+
+        }
+        }
+
+        .down
+        {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            font-weight: 400;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <a href="../../../befit.html"> <h4>BeFit<font style="color: red;font-size: 60px;">.</font></h4></a> -->
+<div class="login">
+    
+    <div class="image">
+       
+        <img src="img/stepping-beautiful-young-female-athlete-practicing-monochrome-blue-portrait-sportive-fit-brunette-model-with-jump-box-weights-wellness-healthy-lifestyle-beauty-action-concept.jpg" alt="">
+    </div>
+    <div class="form">
+        <form action="">
+            <h1>LOGIN</h1>
+        <input type="text" placeholder="username@gmail.com">
+        <input type="password" placeholder="password">
+        <button class="login" onclick="befit.html" ><a href="../befit.html">LOGIN</a></button>
+
+        <a href="signup/signup.html" class="down">Sign up</a>
+        </form>
+      
+    </div>
+</div>
+</body>
+</html>
